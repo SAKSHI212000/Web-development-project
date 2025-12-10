@@ -1,0 +1,39 @@
+/* commissions.css */
+
+/* --- Commissions Page Specific Styling --- */
+
+/* Get the color variables from the root of the main stylesheet */
+:root {
+    --secondary-color: #6366F1; /* Indigo (assuming you used this for focus) */
+}
+
+/* Ensure Select and Textarea match the existing Input styling from style.css */
+.form-container select,
+.form-container textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    /* Reset default browser styling for select/textarea appearance */
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+/* Ensure Textarea and Select focus state matches Input focus state */
+.form-container textarea:focus,
+.form-container select:focus {
+    /* Uses the secondary color defined in the main style.css :root block */
+    border-color: var(--secondary-color); 
+    box-shadow: 0 0 0 2px rgba(99, 102, 241, 0.3);
+    outline: none;
+}
+
+/* Optional: Style the introduction text within the form container */
+.form-container .form-intro {
+    text-align: center;
+    color: #666;
+    margin-bottom: 20px;
+}

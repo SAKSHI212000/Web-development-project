@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ArtFlow - Commission Request</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="commissions.css"> 
+</head>
+<body>
+    <header>
+        <h1><a href="index.html">ArtFlow</a></h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="explore.html">Explore (Visitor)</a></li>
+                <li><a href="showcase.html">Showcase (Artist)</a></li>
+                <li><a href="commissions.html">Commissions</a></li>
+                <li><a href="login.html">Login/Sign Up</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="form-container commission-form">
+            <h2>🎨 Request a Custom Commission</h2>
+            <p class="form-intro">Tell us about the project you envision. We'll connect you with the right artist!</p>
+            
+            <form id="commissionForm">
+                
+                <label for="clientName">Your Name:</label>
+                <input type="text" id="clientName" name="clientName" required>
+
+                <label for="clientEmail">Your Email:</label>
+                <input type="email" id="clientEmail" name="clientEmail" required>
+
+                <label for="artMedium">Preferred Medium:</label>
+                <select id="artMedium" name="artMedium" required>
+                    <option value="">-- Select a Medium --</option>
+                    <option value="digital">Digital Painting</option>
+                    <option value="oil">Oil on Canvas</option>
+                    <option value="sculpture">Sculpture/3D</option>
+                    <option value="photography">Photography</option>
+                    <option value="other">Other</option>
+                </select>
+                
+                <label for="budget">Estimated Budget ($USD):</label>
+                <input type="number" id="budget" name="budget" min="0" placeholder="e.g., 200" required>
+                
+                <label for="description">Project Description (Include size, subject, and deadline):</label>
+                <textarea id="description" name="description" rows="6" required></textarea>
+                
+                <button type="submit">Submit Commission Request</button>
+            </form>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 ArtFlow. All rights reserved. | <a href="#">Privacy</a> | <a href="#">Terms</a></p>
+    </footer>
+
+</body>
+</html>
